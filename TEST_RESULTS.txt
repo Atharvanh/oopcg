@@ -1,0 +1,18 @@
+All 10 programs compiled successfully with javac --release 8.
+Eligible
+PASS: 12646 assertions
+Passed 33 scripted console runs.
+Verified no Java comments in any practical source.
+Calculator: all five operations, divide/remainder by zero, invalid operator/input.
+Constructors: default values, parameters and independent copy-style object.
+Inheritance: single, multilevel and hierarchical output and type relationships.
+Exceptions: every demonstrated catch branch, checked exception, throw, valid paths.
+Polymorphism: overloads and runtime override output.
+Transformations: numerical formulas, independent axes, pivot invariance, X rotation.
+Both Practical07 shapes ran with all four transformation options.
+Clipping: 3000 deterministic random lines compared with an independent
+Liang-Barsky implementation, including horizontal, vertical and point cases.
+DDA/Bresenham: endpoints, pixel count and continuity for all octants and zero length.
+Graphics: Practical10 rendered to PNG in headless mode for visual inspection.
+Desktop window interaction was not manually tested; console and rendering tests
+used Java's headless mode. Swing sources compiled successfully.

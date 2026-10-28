@@ -1,0 +1,69 @@
+SHORT VIVA ANSWERS
+
+PRACTICAL 1
+1. Primitive types: byte, short, int, long, float, double, char, boolean.
+   Reference types include classes (such as String), arrays and interfaces.
+2. The JVM executes Java bytecode and manages memory and runtime services.
+3. Bytecode is the intermediate instruction format stored in .class files.
+4. Compiled bytecode can run on compatible JVMs on different platforms.
+5. OOP features: encapsulation, abstraction, inheritance and polymorphism.
+6. Scanner reads and parses input, for example from System.in.
+7. Exception handling detects and responds to exceptional runtime conditions.
+
+PRACTICAL 2
+1. A constructor initializes a newly created object. It has the class name
+   and no return type.
+2. The compiler supplies a default no-argument constructor if no constructor
+   is declared. An explicitly written no-argument constructor is user-defined.
+3. A parameterized constructor accepts values used to initialize an object.
+4. A copy-style constructor accepts another object and copies its fields.
+   Java does not automatically provide one. Mutable reference fields need
+   separate copying if an independent deep copy is required.
+
+PRACTICAL 3
+1. Inheritance allows a subclass to inherit accessible members of a superclass.
+2. Single: one subclass extends one superclass. Multilevel: a chain such as
+   Animal -> Dog -> Puppy.
+3. A class cannot extend multiple classes. This avoids conflicting inherited
+   class implementations and state. A class can implement multiple interfaces.
+4. extends declares a class superclass or interface superinterfaces.
+5. Hybrid inheritance combines inheritance forms. Java supports combinations
+   using class inheritance and interfaces; it does not allow multiple class
+   inheritance. Hierarchical inheritance means several subclasses of one parent.
+
+PRACTICAL 4
+1. Common categories: compile-time errors, runtime errors and logical errors.
+   java.lang.Error is a separate Throwable branch for serious runtime problems.
+2. Exception handling lets a program respond to exceptional conditions.
+3. try encloses code that may throw; catch handles a matching exception.
+4. throw explicitly throws an exception object. throws declares exceptions
+   that a method may propagate to its caller.
+5. Exceptions are objects representing exceptional conditions. Checked
+   exceptions must be caught or declared; unchecked exceptions include
+   RuntimeException subclasses such as ArithmeticException.
+   finally normally executes whether or not an exception occurs.
+
+PRACTICAL 5
+1. Compile-time polymorphism includes method overloading; runtime polymorphism
+   uses overriding and dynamic dispatch.
+2. Overload selection uses declared types and arguments at compile time;
+   an overridden instance method is selected using the actual runtime object.
+3. Overloading: same method name, different parameter lists. Return type alone
+   cannot distinguish overloads.
+4. Overriding: a subclass supplies an implementation of an inherited instance
+   method with a compatible signature and return type. Static methods are hidden.
+5. Operator overloading gives an operator different behavior for operand types.
+   Java has built-in numeric addition and String concatenation for +, but does
+   not let programmers define custom operator overloads.
+
+GRAPHICS QUICK REVISION
+Translation: x'=x+tx, y'=y+ty.
+Rotation: x'=x*cos(a)-y*sin(a), y'=x*sin(a)+y*cos(a).
+Scaling: x'=sx*x, y'=sy*y.
+Shearing: x'=x+shx*y, y'=y+shy*x.
+Arbitrary pivot rotation: translate pivot to origin, rotate, translate back.
+Cohen-Sutherland: compute four-bit outcodes; OR=0 accepts; nonzero AND rejects;
+otherwise intersect with a relevant window boundary and repeat.
+DDA: use max(abs(dx),abs(dy)) steps and fractional increments, rounding pixels.
+Bresenham: use an integer error term to choose the next raster pixel.
+Dotted/dashed styles skip selected pixels; thick style draws a small pixel block.
